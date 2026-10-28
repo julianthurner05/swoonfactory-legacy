@@ -51,12 +51,17 @@ Achtung E-Mail: `studio@swoonfactory.com` läuft über netcup. Die Einträge `MX
 
 ## Alte Jimdo-Seite
 
-Jimdo bietet keine echte Weiterleitung. Auf swoonfactory.jimdoweb.com kann in jede Seite ein
-„Widget/HTML“-Element mit diesem Inhalt:
+Jimdo bietet keine echte Weiterleitung. Im Jimdo-Editor in die Fußzeile (Bereich mit Adresse –
+erscheint auf allen Seiten) ein Element „Widget/HTML“ mit diesem Inhalt einfügen:
 
 ```html
-<p><a href="https://swoonfactory.com/">Swoon Factory ist umgezogen: swoonfactory.com</a></p>
-<script>location.replace('https://swoonfactory.com' + location.pathname)</script>
+<p>Die Swoon Factory ist umgezogen: <a href="https://swoonfactory.com/">swoonfactory.com</a></p>
+<script>
+  // Nur Besucher weiterleiten, nicht im Jimdo-Editor. Notausgang: ?bleiben an die Adresse hängen.
+  if (document.body.classList.contains('cc-pagemode-default') && !(window.jimdoData && jimdoData.cstok) && location.search.indexOf('bleiben') < 0) {
+    location.replace('https://swoonfactory.com' + location.pathname);
+  }
+</script>
 ```
 
 Sobald swoonfactory.com in der Google Search Console steht (Sitemap: `/sitemap.xml`), kann die
