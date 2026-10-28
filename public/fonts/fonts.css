@@ -1,29 +1,23 @@
 /*
   Schrift der Website – nur hier ändern.
 
-  Standard: Helvetica (auf Mac/iPhone vorinstalliert, sonst Arial als Ersatz).
+  Aktuell: Bricolage Grotesque (Google Fonts, Lizenz: bricolage-grotesque-OFL.txt),
+  eine Datei für alle Stärken von 200 bis 800. Fehlt ein Zeichen, springt Helvetica ein.
 
-  Eigene Webschrift verwenden:
-  1. .woff2-Dateien in diesen Ordner legen (Lizenz für Web-Nutzung beachten).
-  2. Die beiden @font-face-Blöcke einkommentieren und Namen/Dateinamen anpassen.
-  3. Den Schriftnamen vorne in --font eintragen, z. B. "Meine Schrift", Helvetica, …
+  Andere Webschrift verwenden:
+  1. .woff2-Datei in diesen Ordner legen (Lizenz für Web-Nutzung beachten).
+  2. Im @font-face-Block Namen, Dateinamen und Stärken anpassen.
+  3. Den Schriftnamen vorne in --font eintragen.
+  Zurück zu Helvetica: den @font-face-Block löschen und den ersten Namen aus --font entfernen.
 */
 
-/*
 @font-face {
-  font-family: "Meine Schrift";
-  src: url(meine-schrift-regular.woff2) format("woff2");
-  font-weight: 400;
+  font-family: "Bricolage Grotesque";
+  src: url(bricolage-grotesque-latin-wght-normal.woff2) format("woff2");
+  font-weight: 200 800;
   font-display: swap;
 }
-@font-face {
-  font-family: "Meine Schrift";
-  src: url(meine-schrift-bold.woff2) format("woff2");
-  font-weight: 700;
-  font-display: swap;
-}
-*/
 
 :root {
-  --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font: "Bricolage Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

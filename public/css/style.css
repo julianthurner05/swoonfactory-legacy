@@ -1,11 +1,12 @@
 /* Swoon Factory – Stylesheet. Die Schrift steht in /fonts/fonts.css. */
 
 :root {
-  --bg: #141414;
-  --fg: #f3f1ea;
-  --muted: #a19f97;
-  --line: #2f2f2f;
-  --gold: #c5ab51;
+  --bg: #1d1a17;
+  --fg: #f1ebe1;
+  --muted: #aea597;
+  --line: #38322c;
+  --gold: #cbb062;
+  --r: .75rem;
   --pad: clamp(1.25rem, 4vw, 3rem);
   --gap: clamp(1.5rem, 3vw, 2.5rem);
   --sec: clamp(3.5rem, 9vw, 7.5rem);
@@ -32,14 +33,14 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 p + p { margin-top: 1em; }
 
 /* Schrift-Hierarchie */
-h1, h2, h3, .display { font-weight: 700; line-height: 1.05; letter-spacing: -.03em; text-wrap: balance; }
-.display { font-size: clamp(3.5rem, 13vw, 11rem); line-height: .86; letter-spacing: -.05em; }
-h1 { font-size: clamp(3rem, 9vw, 7rem); line-height: .9; letter-spacing: -.045em; }
+h1, h2, h3, .display { font-weight: 700; line-height: 1.08; letter-spacing: -.02em; text-wrap: balance; }
+.display { font-size: clamp(3.5rem, 12vw, 10rem); line-height: .92; letter-spacing: -.035em; }
+h1 { font-size: clamp(3rem, 8vw, 6.5rem); line-height: .95; letter-spacing: -.03em; }
 h2 { font-size: clamp(1.75rem, 3.5vw, 2.75rem); }
-h3 { font-size: 1.25rem; letter-spacing: -.01em; }
+h3 { font-size: 1.25rem; letter-spacing: -.005em; }
 .lead { max-width: 24em; color: var(--gold); font-size: clamp(1.375rem, 2.8vw, 2.375rem); line-height: 1.2; letter-spacing: -.02em; text-wrap: pretty; }
 .big { font-size: clamp(1.25rem, 2vw, 1.625rem); line-height: 1.35; letter-spacing: -.015em; }
-.label { color: var(--gold); font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.label { color: var(--gold); font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 
 /* Raster */
 .wrap { max-width: 84rem; margin-inline: auto; padding-inline: var(--pad); }
@@ -56,7 +57,7 @@ h3 { font-size: 1.25rem; letter-spacing: -.01em; }
   position: sticky; top: 0; z-index: 9;
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 2rem;
   padding: .875rem var(--pad);
-  background: rgb(20 20 20 / .9);
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
   -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
@@ -70,18 +71,18 @@ h3 { font-size: 1.25rem; letter-spacing: -.01em; }
 /* Startseite */
 .hero { position: relative; isolation: isolate; display: flex; align-items: flex-end; min-height: min(86svh, 60rem); padding-block: var(--sec) clamp(2.5rem, 6vw, 5rem); }
 .hero > img { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; }
-.hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, var(--bg), rgb(20 20 20 / .45) 55%, rgb(20 20 20 / .1)); }
+.hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, var(--bg), color-mix(in srgb, var(--bg) 40%, transparent) 55%, transparent); }
 .hero .wrap { width: 100%; }
 .hero .label { margin-bottom: 1.25rem; }
 .split { display: grid; gap: var(--gap); align-items: end; }
 /* sounddna-Hinweis (Farbe aus der sounddna-Marke) */
-.sdna { background: #fff; color: #0c0e29; }
+.sdna { background: #f4efe6; color: #0c0e29; }
 .sdna img { width: min(100%, 18rem); }
 .sdna h2 { margin-bottom: 1rem; }
 .sdna .more { border-color: #0c0e29; color: #0c0e29; }
 .sdna .more:hover { background: #0c0e29; color: #fff; }
 .sdna a:focus-visible { outline-color: #2977c3; }
-.index a { display: flex; align-items: baseline; padding-block: clamp(1rem, 2.5vw, 1.75rem); border-top: 1px solid var(--line); font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; line-height: 1; letter-spacing: -.04em; text-decoration: none; }
+.index a { display: flex; align-items: baseline; padding-block: clamp(1rem, 2.5vw, 1.75rem); border-top: 1px solid var(--line); font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; line-height: 1; letter-spacing: -.025em; text-decoration: none; }
 .index a:last-child { border-bottom: 1px solid var(--line); }
 .index a::after { content: "→"; margin-left: auto; font-weight: 400; }
 
@@ -90,9 +91,10 @@ h3 { font-size: 1.25rem; letter-spacing: -.01em; }
 .intro .lead { margin-top: clamp(1.5rem, 3vw, 2.5rem); }
 .wide { margin-top: var(--sec); }
 .wide img { width: 100%; max-height: 80vh; object-fit: cover; }
+.split img, .wide img, .card img, .person img { border-radius: var(--r); }
 .card img { width: 100%; margin-bottom: 1.5rem; }
 .card h2 { margin: .5rem 0 1rem; font-size: 1.5rem; }
-.more { display: inline-block; padding: .625rem 1.125rem; border: 1px solid var(--gold); color: var(--gold); font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; }
+.more { display: inline-block; padding: .7rem 1.25rem; border: 1px solid var(--gold); border-radius: 999px; color: var(--gold); font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; }
 .more:hover { background: var(--gold); color: var(--bg); }
 
 .specs { margin-top: 2rem; border-bottom: 1px solid var(--line); }
@@ -102,9 +104,9 @@ h3 { font-size: 1.25rem; letter-spacing: -.01em; }
 .specs li, .clients li { break-inside: avoid; padding-block: .15rem; }
 
 .covers { display: grid; grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr)); gap: .5rem; }
-.covers img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+.covers img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: .375rem; }
 .az { display: flex; flex-wrap: wrap; gap: .25rem; margin-block: 2rem 3rem; }
-.az a { min-width: 2.25rem; padding-block: .4rem; border: 1px solid var(--line); font-size: .875rem; font-weight: 700; text-align: center; text-decoration: none; }
+.az a { min-width: 2.25rem; padding-block: .4rem; border: 1px solid var(--line); border-radius: .5rem; font-size: .875rem; font-weight: 700; text-align: center; text-decoration: none; }
 .az a:hover { border-color: var(--gold); }
 .clients { columns: 13rem; column-gap: var(--gap); }
 .clients section { break-inside: avoid; padding-bottom: 2rem; }
