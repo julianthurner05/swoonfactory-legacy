@@ -7,6 +7,8 @@
 /contact/               /#kontakt                                      301
 /sitemap                /                                              301
 /sitemap/               /                                              301
+/contact/terms-conditions   /                                          301
+/contact/terms-conditions/  /                                          301
 /home                   /                                              301
 /j/privacy              /contact/impressum-offenlegung/#datenschutz    301
 /j/privacy/             /contact/impressum-offenlegung/#datenschutz    301
@@ -14,8 +16,9 @@
 # Kurzadressen
 /impressum              /contact/impressum-offenlegung/                301
 /datenschutz            /contact/impressum-offenlegung/#datenschutz    301
-/agb                    /contact/terms-conditions/                     301
+/agb                    /                                              301
 
-# Jimdo-Shop-Texte und alter PDF-Download
-/j/*                    /contact/terms-conditions/                     301
-/app/download/*         /downloads/agb.pdf                             301
+# Jimdo-Shop-Texte und frühere AGB-Downloads (AGB gibt es nicht mehr)
+/downloads/agb.pdf      /                                              301
+/j/*                    /                                              301
+/app/download/*         /                                              301

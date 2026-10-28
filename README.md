@@ -10,11 +10,10 @@ public/                       alles, was online geht
   index.html                  Home
   services/ studio/ clients/ about/
   contact/impressum-offenlegung/   Impressum + Datenschutz
-  contact/terms-conditions/        AGB-Download
   404.html
   css/style.css               Gestaltung (Farben oben in :root)
   fonts/fonts.css             Schrift – nur hier ändern
-  images/  downloads/agb.pdf
+  images/
   _redirects                  alte Jimdo-Adressen -> neue Seiten
   _headers                    Sicherheits- und Cache-Header
 originals/                    unveränderte Downloads von Jimdo (nicht online)
@@ -26,7 +25,7 @@ Die Seitenadressen sind dieselben wie bei Jimdo (`/services/`, `/studio/` …), 
 
 ## Bearbeiten
 
-- Texte direkt in den HTML-Dateien ändern. Kopf- und Fußzeile stehen in allen 8 HTML-Dateien gleich –
+- Texte direkt in den HTML-Dateien ändern. Kopf- und Fußzeile stehen in allen 7 HTML-Dateien gleich –
   eine Änderung dort in allen Dateien machen.
 - Schrift: `public/fonts/fonts.css` (Anleitung steht in der Datei).
 - Bilder: neue Bilder am besten unter neuem Dateinamen ablegen (sie werden eine Woche gecacht).
@@ -91,12 +90,12 @@ Im Code erledigt: Canonical-Links, `sitemap.xml` und `robots.txt`, strukturierte
 ## Hinweise
 
 - Die Website ist als Archiv gekennzeichnet: Hinweisleiste `<p class="legacy">` oben in jeder
-  HTML-Datei, „(Archiv)“ im Titel der Startseite, „Organization“ statt „LocalBusiness“ in den
+  HTML-Datei (mit Link zu sounddna), der Abschnitt „Wir sind jetzt sounddna“ auf der Startseite,
+  „(Archiv)“ im Titel der Startseite, „Organization“ statt „LocalBusiness“ in den
   strukturierten Daten und ein Archiv-Hinweis in `llms.txt`.
 
-- Die Datenschutzerklärung ist unverändert von Jimdo übernommen. Sie nennt Google Analytics,
-  Cookies und Facebook-Plugins – die neue Seite verwendet nichts davon (nur einfache Teilen-Links).
-  Bitte inhaltlich prüfen und anpassen.
+- Die Datenschutzerklärung folgt der von sound-dna.com, angepasst an diese Seite (Cloudflare-Hosting,
+  Kontakt per E-Mail, keine Cookies, keine Formulare). Kommt ein neuer Dienst dazu, dort ergänzen.
 - Die Content-Security-Policy in `_headers` erlaubt kein JavaScript. Cloudflare-Funktionen, die
   Skripte einfügen (Web Analytics, Email Obfuscation, Rocket Loader), würden blockiert – dann
   `_headers` anpassen.

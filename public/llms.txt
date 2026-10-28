@@ -4,6 +4,8 @@
 
 Archive: Swoon Factory is no longer in operation. It was a recording studio in Vienna, Austria, active since 1995, offering music production, mixing and mastering.
 
+Heute / Today: Aus der Swoon Factory wurde sounddna (https://sound-dna.com/) an derselben Adresse in Wien – Hintergrundmusik, Instore-Durchsagen und Soundsysteme für Retail, Gastronomie und Hotellerie. Swoon Factory is now sounddna: background music, in-store announcements and sound systems for retail, hospitality and hotels.
+
 - Studio Owner, Producer, Music & Sound Expert: Bernhard Thurner
 - Mixing Engineer, Programmer, VSL-Developer (arbeitete regelmäßig im Studio): Dietz Tinhof
 - Kontakt: swoonfactory@swoonfactory.com, +43 1 9852644
@@ -12,10 +14,10 @@ Archive: Swoon Factory is no longer in operation. It was a recording studio in V
 
 - [Services](https://swoonfactory.com/services/): Music Production, Music Mixing, Mastering
 - [Studio](https://swoonfactory.com/studio/): Ausstattung, u. a. PMC MB2, Dynaudio BM12A und Yamaha NS 10M als Monitore, SSL X-Rack 24 Channel Summing, Audient Zen Console, Avid Pro Tools HD4 Accel, Outboard von API, Crane Song, Great River, Prism Sound und Universal Audio, Mikrofone von Neumann, AKG, Sennheiser und Shure
-- [Clients](https://swoonfactory.com/clients/): Kunden von A bis Z, u. a. Christina Stürmer, EAV, Falco, STS, Opus, DJ Ötzi, Russkaja, Starmania, Sony Music, Universal und EMI
+- [Clients](https://swoonfactory.com/clients/): Kunden von A bis Z, u. a. Christina Stürmer, Conchita Wurst, EAV, Falco, STS, Opus, DJ Ötzi, Russkaja, Starmania, Sony Music, Universal und EMI
 - [About](https://swoonfactory.com/about/): Bernhard Thurner und Dietz Tinhof
+- [sounddna](https://sound-dna.com/): die heutige Firma
 
 ## Rechtliches
 
 - [Impressum & Datenschutz](https://swoonfactory.com/contact/impressum-offenlegung/)
-- [AGB als PDF](https://swoonfactory.com/downloads/agb.pdf)
