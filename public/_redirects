@@ -1,0 +1,21 @@
+# Alte Jimdo-Adressen -> neue Seiten (301 = dauerhaft umgezogen)
+# Format: /alter-pfad  /ziel  301
+
+/about-1                /about/                                        301
+/about-1/               /about/                                        301
+/contact                /#kontakt                                      301
+/contact/               /#kontakt                                      301
+/sitemap                /                                              301
+/sitemap/               /                                              301
+/home                   /                                              301
+/j/privacy              /contact/impressum-offenlegung/#datenschutz    301
+/j/privacy/             /contact/impressum-offenlegung/#datenschutz    301
+
+# Kurzadressen
+/impressum              /contact/impressum-offenlegung/                301
+/datenschutz            /contact/impressum-offenlegung/#datenschutz    301
+/agb                    /contact/terms-conditions/                     301
+
+# Jimdo-Shop-Texte und alter PDF-Download
+/j/*                    /contact/terms-conditions/                     301
+/app/download/*         /downloads/agb.pdf                             301

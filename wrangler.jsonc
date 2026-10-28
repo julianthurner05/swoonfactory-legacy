@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers – rein statische Website, kein Build-Schritt.
+  // Veröffentlicht wird nur der Ordner public/.
+  // Im Dashboard: Build-Befehl leer lassen, Deploy-Befehl "npx wrangler deploy".
+  "name": "swoonfactory-legacy",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
