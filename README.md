@@ -64,8 +64,20 @@ erscheint auf allen Seiten) ein Element „Widget/HTML“ mit diesem Inhalt einf
 </script>
 ```
 
-Sobald swoonfactory.com in der Google Search Console steht (Sitemap: `/sitemap.xml`), kann die
-Jimdo-Seite gelöscht werden.
+Sobald swoonfactory.com bei Google indexiert ist, kann die Jimdo-Seite gelöscht werden.
+
+## Suchmaschinen
+
+Im Code erledigt: Canonical-Links, `sitemap.xml` und `robots.txt`, strukturierte Daten
+(LocalBusiness auf der Startseite), 301-Weiterleitungen der alten Adressen.
+
+- **Google:** In der [Search Console](https://search.google.com/search-console) eine Domain-Property
+  `swoonfactory.com` anlegen (Bestätigung per DNS-TXT-Eintrag bei Cloudflare) und dort
+  `https://swoonfactory.com/sitemap.xml` einreichen.
+- **Bing:** In den Bing Webmaster Tools die Seite aus der Search Console importieren.
+- **IndexNow (Bing, Yandex u. a.):** Nach jeder Änderung, die live ist, `bash scripts/indexnow.sh`
+  ausführen. Der Schlüssel liegt als `public/<32 Zeichen>.txt` und muss online bleiben.
+- Bei Änderungen am Inhalt das Datum in `<lastmod>` der `sitemap.xml` anpassen.
 
 ## Hinweise
 
