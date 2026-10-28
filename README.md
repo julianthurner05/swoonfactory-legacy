@@ -78,10 +78,10 @@ Im Code erledigt: Canonical-Links, `sitemap.xml` und `robots.txt`, strukturierte
 - **IndexNow (Bing, Yandex u. a.):** Nach jeder Änderung, die live ist, `bash scripts/indexnow.sh`
   ausführen. Der Schlüssel liegt als `public/<32 Zeichen>.txt` und muss online bleiben.
 - Bei Änderungen am Inhalt das Datum in `<lastmod>` der `sitemap.xml` anpassen.
-- **KI-Dienste (ChatGPT, Claude, Perplexity u. a.):** `robots.txt` erlaubt alle KI-Crawler ausdrücklich,
-  `public/llms.txt` fasst die Fakten zur Swoon Factory für KI-Systeme zusammen – bei inhaltlichen
-  Änderungen mitpflegen. Cloudflare blockiert KI-Trainings-Crawler (GPTBot, ClaudeBot, CCBot)
-  standardmäßig: Dashboard → swoonfactory.com → AI Crawl Control → diese Crawler auf „Allow“ stellen.
+- **KI-Dienste (ChatGPT, Claude, Perplexity u. a.):** `robots.txt` erlaubt die KI-Such- und
+  Antwort-Crawler ausdrücklich, `public/llms.txt` fasst die Fakten zur Swoon Factory für KI-Systeme
+  zusammen – bei inhaltlichen Änderungen mitpflegen. KI-Trainings-Crawler (GPTBot, ClaudeBot, CCBot)
+  blockiert Cloudflare bewusst (AI Crawl Control); KI-Suche funktioniert davon unabhängig.
 
 ## Hinweise
 
