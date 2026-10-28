@@ -76,7 +76,7 @@ h3 { font-size: 1.25rem; letter-spacing: -.01em; }
 .split { display: grid; gap: var(--gap); align-items: end; }
 /* sounddna-Hinweis (Farbe aus der sounddna-Marke) */
 .sdna { background: #fff; color: #0c0e29; }
-.sdna img { width: min(100%, 30rem); }
+.sdna img { width: min(100%, 18rem); }
 .sdna h2 { margin-bottom: 1rem; }
 .sdna .more { border-color: #0c0e29; color: #0c0e29; }
 .sdna .more:hover { background: #0c0e29; color: #fff; }
