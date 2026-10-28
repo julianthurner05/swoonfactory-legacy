@@ -49,14 +49,6 @@ Achtung E-Mail: `studio@swoonfactory.com` läuft über netcup. Die Einträge `MX
    Rules → Redirect Rules → Vorlage „Redirect from WWW to root“ (301).
 4. SSL/TLS → Edge Certificates → „Always Use HTTPS“ einschalten.
 
-## Andere Domains auf swoonfactory.com umleiten
-
-Für jede weitere Domain, die bei Cloudflare liegt: Account → Bulk Redirects → Liste anlegen mit
-`alte-domain.tld` → `https://swoonfactory.com`, Status 301, Optionen „Preserve query string“,
-„Include subdomains“, „Subpath matching“ und „Preserve path suffix“. Die Domain braucht einen
-DNS-Eintrag auf „Proxied“ (z. B. `A @ 192.0.2.1`). Pfade wie `/about-1/` kommen dank `_redirects`
-trotzdem auf der richtigen Seite an.
-
 ## Alte Jimdo-Seite
 
 Jimdo bietet keine echte Weiterleitung. Auf swoonfactory.jimdoweb.com kann in jede Seite ein
