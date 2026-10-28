@@ -23,7 +23,10 @@
     {
       "@type": "WebSite",
       "name": "Swoon Factory",
-      "url": "https://swoonfactory.com/"
+      "url": "https://swoonfactory.com/",
+      "publisher": {
+        "@id": "https://swoonfactory.com/#studio"
+      }
     },
     {
       "@type": "LocalBusiness",
@@ -41,7 +44,52 @@
         "postalCode": "1150",
         "addressLocality": "Wien",
         "addressCountry": "AT"
-      }
+      },
+      "@id": "https://swoonfactory.com/#studio",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Music Production",
+              "url": "https://swoonfactory.com/services/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Music Mixing",
+              "url": "https://swoonfactory.com/services/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mastering",
+              "url": "https://swoonfactory.com/services/"
+            }
+          }
+        ]
+      },
+      "member": [
+        {
+          "@type": "Person",
+          "name": "Bernhard Thurner",
+          "jobTitle": "Studio Owner, Producer, Music & Sound Expert",
+          "url": "http://www.bernhardthurner.com/"
+        },
+        {
+          "@type": "Person",
+          "name": "Dietz Tinhof",
+          "jobTitle": "Mixing Engineer, Programmer, VSL-Developer",
+          "url": "https://www.mixedbydietz.com/"
+        }
+      ]
     }
   ]
 }
