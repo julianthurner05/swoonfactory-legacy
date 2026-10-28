@@ -73,12 +73,13 @@ h3 { font-size: 1.25rem; letter-spacing: -.01em; }
 .hero .label { margin-bottom: 1.25rem; }
 .split { display: grid; gap: var(--gap); align-items: end; }
 /* sounddna-Hinweis (Farbe aus der sounddna-Marke) */
-.sdna { background: #0c0e29; }
-.sdna .label { margin-bottom: 1.5rem; color: #d4d7e3; }
+.sdna { background: #fff; color: #0c0e29; }
+.sdna .label { margin-bottom: 1.5rem; color: #2977c3; }
 .sdna img { width: min(100%, 30rem); }
 .sdna h2 { margin-bottom: 1rem; }
-.sdna .more { border-color: #fff; color: #fff; }
-.sdna .more:hover { background: #fff; color: #0c0e29; }
+.sdna .more { border-color: #0c0e29; color: #0c0e29; }
+.sdna .more:hover { background: #0c0e29; color: #fff; }
+.sdna a:focus-visible { outline-color: #2977c3; }
 .index a { display: flex; align-items: baseline; gap: 1.5rem; padding-block: clamp(1rem, 2.5vw, 1.75rem); border-top: 1px solid var(--line); font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; line-height: 1; letter-spacing: -.04em; text-decoration: none; }
 .index a:last-child { border-bottom: 1px solid var(--line); }
 .index a::after { content: "→"; margin-left: auto; font-weight: 400; }
