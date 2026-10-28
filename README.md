@@ -51,18 +51,23 @@ Achtung E-Mail: `swoonfactory@swoonfactory.com` läuft über netcup. Die Einträ
 
 ## Alte Jimdo-Seite
 
-Jimdo bietet keine echte Weiterleitung. Im Jimdo-Editor in die Fußzeile (Bereich mit Adresse –
-erscheint auf allen Seiten) ein Element „Widget/HTML“ mit diesem Inhalt einfügen:
+Jimdo bietet keine echte Weiterleitung. Diesen Schnipsel entweder unter Menü → Einstellungen →
+„Head bearbeiten“ (für die ganze Website) einfügen oder – falls das im Gratis-Plan fehlt – als
+Element „Widget/HTML“ in die Fußzeile (Bereich mit Adresse, erscheint auf allen Seiten):
 
 ```html
-<p>Die Swoon Factory ist umgezogen: <a href="https://swoonfactory.com/">swoonfactory.com</a></p>
 <script>
   // Nur Besucher weiterleiten, nicht im Jimdo-Editor. Notausgang: ?bleiben an die Adresse hängen.
-  if (document.body.classList.contains('cc-pagemode-default') && !(window.jimdoData && jimdoData.cstok) && location.search.indexOf('bleiben') < 0) {
-    location.replace('https://swoonfactory.com' + location.pathname);
-  }
+  document.addEventListener('DOMContentLoaded', function () {
+    if (document.body.classList.contains('cc-pagemode-default') && !(window.jimdoData && jimdoData.cstok) && location.search.indexOf('bleiben') < 0) {
+      location.replace('https://swoonfactory.com' + location.pathname);
+    }
+  });
 </script>
 ```
+
+Geht beides nicht, in die Fußzeile ein normales Textelement mit Link setzen:
+„Die Swoon Factory ist umgezogen: swoonfactory.com“.
 
 Sobald swoonfactory.com bei Google indexiert ist, kann die Jimdo-Seite gelöscht werden.
 
