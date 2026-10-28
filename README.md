@@ -40,7 +40,7 @@ Jeder Push auf `main` geht danach automatisch online.
 
 ## Domain swoonfactory.com umstellen
 
-Achtung E-Mail: `studio@swoonfactory.com` läuft über netcup. Die Einträge `MX`, `mail`, `autodiscover`,
+Achtung E-Mail: `swoonfactory@swoonfactory.com` läuft über netcup. Die Einträge `MX`, `mail`, `autodiscover`,
 `autoconfig` und die `TXT`/SPF-Einträge unbedingt stehen lassen.
 
 1. DNS: nur den `A`-Eintrag für `swoonfactory.com` (Name `@`, zeigt auf die netcup-Platzhalterseite) löschen.
