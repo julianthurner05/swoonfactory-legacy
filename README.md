@@ -90,6 +90,10 @@ Im Code erledigt: Canonical-Links, `sitemap.xml` und `robots.txt`, strukturierte
 
 ## Hinweise
 
+- Die Website ist als Archiv gekennzeichnet: Hinweisleiste `<p class="legacy">` oben in jeder
+  HTML-Datei, „(Archiv)“ im Titel der Startseite, „Organization“ statt „LocalBusiness“ in den
+  strukturierten Daten und ein Archiv-Hinweis in `llms.txt`.
+
 - Die Datenschutzerklärung ist unverändert von Jimdo übernommen. Sie nennt Google Analytics,
   Cookies und Facebook-Plugins – die neue Seite verwendet nichts davon (nur einfache Teilen-Links).
   Bitte inhaltlich prüfen und anpassen.
