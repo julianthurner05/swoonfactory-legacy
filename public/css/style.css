@@ -50,6 +50,8 @@ h3 { font-size: 1.25rem; letter-spacing: -.01em; }
 /* Archiv-Hinweis und Kopfzeile */
 .legacy { padding: .625rem var(--pad); background: var(--gold); color: var(--bg); font-size: .875rem; font-weight: 700; text-align: center; }
 .legacy strong { margin-right: .5rem; font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; }
+.legacy a:hover { color: inherit; text-decoration-thickness: 2px; }
+.legacy a:focus-visible { outline-color: var(--bg); }
 .top {
   position: sticky; top: 0; z-index: 9;
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 2rem;
@@ -79,10 +81,9 @@ h3 { font-size: 1.25rem; letter-spacing: -.01em; }
 .sdna .more { border-color: #0c0e29; color: #0c0e29; }
 .sdna .more:hover { background: #0c0e29; color: #fff; }
 .sdna a:focus-visible { outline-color: #2977c3; }
-.index a { display: flex; align-items: baseline; gap: 1.5rem; padding-block: clamp(1rem, 2.5vw, 1.75rem); border-top: 1px solid var(--line); font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; line-height: 1; letter-spacing: -.04em; text-decoration: none; }
+.index a { display: flex; align-items: baseline; padding-block: clamp(1rem, 2.5vw, 1.75rem); border-top: 1px solid var(--line); font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; line-height: 1; letter-spacing: -.04em; text-decoration: none; }
 .index a:last-child { border-bottom: 1px solid var(--line); }
 .index a::after { content: "→"; margin-left: auto; font-weight: 400; }
-.index span { min-width: 2ch; color: var(--gold); font-size: .8125rem; letter-spacing: .1em; }
 
 /* Unterseiten */
 .intro { padding-top: clamp(3rem, 8vw, 6.5rem); }
